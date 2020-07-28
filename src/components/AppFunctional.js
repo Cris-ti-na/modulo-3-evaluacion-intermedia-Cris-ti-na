@@ -1,8 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../App.css';
+import List from './List';
+import '../data/pokemons.json';
 
-function App() {
+const App = props => {
+  console.log(props);
+  return (
+    <div className="App">
+      <header classname="App-header">
+        <p>Mi lista de pokemon</p>
+      </header>
+      <main>
+        <div>
+          <List pokemons={"id"} />
+        </div>
+      </main>
+    </div>
+  );
+};
+
+
+
+/*
+function App2() {
   return (
     <div className="App">
       <header className="App-header">
@@ -22,5 +42,6 @@ function App() {
     </div>
   );
 }
+*/
 
 export default App;
