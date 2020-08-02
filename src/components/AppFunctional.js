@@ -1,25 +1,26 @@
 import React from 'react';
 import '../App.css';
-import List from './List';
-import '../data/pokemons.json';
+import data from '../data/pokemons.json';
+import Pokelist from './Pokelist';
 
-const App = props => {
-  console.log(props);
+
+const App = () => {
+  //console.log(data);
   return (
     <div className="App">
-      <header classname="App-header">
-        <p>Mi lista de pokemon</p>
+      <header className="App-header">
+        <p>PokeCris</p>
       </header>
       <main>
         <div>
-          <List pokemons={"id"} />
+          <Pokelist  list={data} />
         </div>
       </main>
     </div>
   );
 };
 
-
+export default App;
 
 /*
 function App2() {
@@ -44,4 +45,3 @@ function App2() {
 }
 */
 
-export default App;
