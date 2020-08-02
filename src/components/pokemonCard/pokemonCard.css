@@ -1,0 +1,52 @@
+.card__title {
+    text-align: center;
+    display: block;
+    margin: 0;
+    text-transform: capitalize;
+    font-size: calc(10px + 1vmin);
+    margin: 8px;
+}
+
+.card__img {
+width: 100%;
+}
+
+.card__types {
+list-style: none;
+text-align: center;
+justify-content: center;
+margin: 2px;
+padding: 2px;
+font-size: 12px;
+}
+
+.card__types-grass {
+    background: greenyellow;
+    border-radius: 10px;
+}
+
+.card__types-poison {
+    background: purple;
+    color: white;
+    border-radius: 10px;
+}
+
+.card__types-fire {
+    background: red;
+    border-radius: 10px;
+}
+
+.card__types-flying {
+    background: lightskyblue;
+    border-radius: 10px;
+}
+
+.card__types-water {
+    background: cyan;
+    border-radius: 10px;
+}
+
+.card__types-bug {
+    background: limegreen;
+    border-radius: 10px;
+}

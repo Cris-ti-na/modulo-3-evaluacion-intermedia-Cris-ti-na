@@ -1,0 +1,17 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    overflow: hidden;
+}
+
+.card {
+display: flex;
+justify-content: space-between;
+border-radius: 5%;
+background-color: lightcyan;
+border: 2px solid turquoise;
+margin: 15px;
+min-width: 120px;
+justify-content: center;
+}

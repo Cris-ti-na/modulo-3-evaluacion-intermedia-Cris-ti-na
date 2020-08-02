@@ -1,5 +1,6 @@
 import React from 'react';
-import Pokemon from './Pokemon';
+import Pokemon from '../pokemonCard/pokemonCard';
+import './pokemonList.css';
 
 const Pokelist = (props) => {
     //console.log(props.list);
@@ -8,7 +9,7 @@ const Pokelist = (props) => {
     const listli = props.list.map((pokemon) => {
         //console.log(pokemon);
         return (
-            <li key={pokemon.id}>
+            <li key={pokemon.id} className="card">
                 <Pokemon pokemon={pokemon}
                     //Si quiero traer uno a uno cada dato, puedo hacer esto
                     //name={pokemon.name}
@@ -21,7 +22,9 @@ const Pokelist = (props) => {
 
     return (
         <div>
-            {listli}
+            <ul className="cards">
+                {listli}
+            </ul>
         </div>
     )
 };
