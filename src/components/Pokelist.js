@@ -2,11 +2,11 @@ import React from 'react';
 import Pokemon from './Pokemon';
 
 const Pokelist = (props) => {
-    console.log(props.list);
+    //console.log(props.list);
     //return <div>Soy un listado</div>;
 
     const listli = props.list.map((pokemon) => {
-        console.log(pokemon);
+        //console.log(pokemon);
         return (
             <li key={pokemon.id}>
                 <Pokemon pokemon={pokemon}
